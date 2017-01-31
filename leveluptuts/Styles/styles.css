@@ -1,0 +1,118 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+}
+
+.side-header {
+	background: #3F51B5;
+	color: #FFF;
+	padding: 10px 5%;
+	box-shadow: 0 1px 3px #000;
+}
+
+.side-header h1 {
+	margin:0;
+	font-size:20px;
+	float: left;
+}
+
+.main-nav {
+	float: right;
+}
+
+.main-nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.main-nav ul li{
+	display: inline;
+}
+
+.main-nav ul li a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.billboard {
+	text-align: center;
+	background: #333;
+	color: #FFF;
+	padding: 30px;
+}
+
+.billboard h3{
+	margin-top: 0; 
+}
+
+.main-col {
+	float: left;
+	width: 70%;
+	background: #0A4;
+}
+
+.main-side {
+	float: right;
+	width: 25%;
+	padding: 20px 2.5%;
+	background: #AAA;
+}
+
+.column-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-footer {
+	background: #333;
+	color: #FFF;
+	padding: 10px 5%;
+}
+
+.main-footer a{
+	color: #FFF;
+	font-size: 12px;
+}
+
+.footer-nav {
+	float: right;
+	list-style: none;
+}
+
+.footer-nav li{
+	float: left;
+}
+
+.footer-nav li + li{
+	margin-left: 10px;
+}
+
+.copywrite {
+	float: left;
+}
